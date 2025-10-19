@@ -1,0 +1,1 @@
+# base connector interface (stub)

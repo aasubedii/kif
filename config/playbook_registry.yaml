@@ -1,0 +1,5 @@
+# maps incident types to playbooks (fill in as you design)
+default: baseline
+playbooks:
+  phishing: phishing_basic
+  ransomware: ransomware_triage

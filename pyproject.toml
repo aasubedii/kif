@@ -1,0 +1,30 @@
+[project]
+name = "kestrel-intelligence-framework"
+version = "0.1.0"
+description = "Kestrel: a multi-agent cognitive architecture for cybersecurity ops."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "John White" }]
+dependencies = [
+  "pydantic>=2.8",
+  # "fastapi>=0.115",    # uncomment if building an API
+  # "uvicorn[standard]>=0.30",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "black>=24.0", "mypy>=1.10"]
+
+[project.scripts]
+kestrel = "main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
