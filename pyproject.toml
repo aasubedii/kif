@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Kestrel: a multi-agent cognitive architecture for cybersecurity ops."
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{ name = "John White" }]
+authors = [{ name = "asubedi" }]
 dependencies = [
   "pydantic>=2.8",
   # "fastapi>=0.115",    # uncomment if building an API
